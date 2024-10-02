@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Feedback Form</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -11,25 +11,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css" />
 </head>
 <body>
     <form class="feedback-form" autocomplete="off">
         <label>
           Email
-          <input type="email" name="email" autofocus />
+          <input type="email" name="email" autofocus required />
         </label>
         <label>
           Message
-          <textarea name="message" rows="8"></textarea>
+          <textarea name="message" rows="8" required></textarea>
         </label>
         <button type="submit">Submit</button>
-      </form>
-    <script src="js/2-form.js" type= "module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    </form>
+    <script src="src/js/2-form.js" type="module"></script>
 </body>
 </html>
